@@ -1,0 +1,12 @@
+{
+    "name": "PZ1",
+    "description": "Hocus pocus",
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+}
