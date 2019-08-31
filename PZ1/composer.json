@@ -1,5 +1,5 @@
 {
-    "name": "PZ1",
+    "name": "pila-wp/pz1",
     "description": "Hocus pocus",
     "require-dev": {
         "squizlabs/php_codesniffer": "*"
@@ -9,4 +9,8 @@
             "src/"
         ]
     },
+    "scripts": {
+        "phpcs": "phpcs src",
+        "phpcbf": "phpcbf src"
+    }
 }

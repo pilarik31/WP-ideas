@@ -18,7 +18,7 @@ Everything you need to know, you can find there.
 - Namespace
 - Class "Utilities"
 - Public method that returns some string.
-- Public method "getEurToCzk" with (strict typed) float input that defaults to null. If method input remains null, return current rate for 1 €. If input is not null, calculate value of inputted € in CZK, round in to two decimal places and return the value.
+- Public method "getEurToCzk" with (strict typed) float input that defaults to null. If method input remains null, return current rate for 1 € rounded to two decimal places. If input is not null, calculate value of inputted € in CZK, round it to two decimal places and return the value.
 
 Currency API 
 - https://api.exchangeratesapi.io/latest?base=EUR&symbols=CZK

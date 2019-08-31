@@ -100,8 +100,17 @@ class Utilities
     public function getEurToCzk(float $eur = null)
     {
         $url = "https://api.exchangeratesapi.io/latest?base=EUR&symbols=CZK";
-        $json = file_get_contents($url);
-        $json_data = json_decode($json, true);
-        return $json_data;
+
+        if ($eur == null || empty($eur)) {
+            $json = file_get_contents($url);
+            $jsonData = json_decode($json, true);
+            return round($jsonData['rates']['CZK'], 2);
+        } elseif (!empty($eur)) {
+            $json = file_get_contents($url);
+            $jsonData = json_decode($json, true);
+            
+            $value = $eur * $jsonData['rates']['CZK'];
+            return round($value, 2);
+        }
     }
 }
